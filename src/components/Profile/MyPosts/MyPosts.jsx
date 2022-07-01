@@ -1,14 +1,9 @@
 import classes from "./MyPosts.module.css";
 import Post from "./Post/Post";
 
-const MyPosts = () => {
+const MyPosts = (props) => {
 
-    let posts = [
-        {id: 0, message: 'Hello!', likesCount: 15},
-        {id: 1, message: 'How are you?', likesCount: 20}
-    ]
-
-    let postsElements = posts.map(p => <Post message={p.message} likes_count={p.likesCount} />)
+    let postsElements = props.posts.map((post, index) => <Post message={post.message} likes_count={post.likesCount} key ={index} />)
 
     return (
         <div className={classes.postsBlock}>
@@ -25,7 +20,7 @@ const MyPosts = () => {
                 {postsElements}
             </div>
         </div>
-)
+    )
 }
 
 export default MyPosts
