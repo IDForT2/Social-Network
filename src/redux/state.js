@@ -16,12 +16,12 @@ let state = {
 
     dialogsPage: {
         dialogs: [
-            {id: 0, name: 'Danil', img: 'https://cdn-icons-png.flaticon.com/512/147/147144.png'},
+            {id: 0, name: 'Sashko', img: 'https://cdn-icons-png.flaticon.com/512/147/147144.png'},
             {id: 1, name: 'Vladislav', img: 'https://cdn-icons-png.flaticon.com/512/147/147144.png'},
             {id: 2, name: 'Aleksey', img: 'https://cdn-icons-png.flaticon.com/512/147/147144.png'},
             {id: 3, name: 'Ilya', img: 'https://cdn-icons-png.flaticon.com/512/147/147144.png'},
             {id: 4, name: 'Artem', img: 'https://cdn-icons-png.flaticon.com/512/147/147144.png'},
-            {id: 5, name: 'Nikita', img: 'https://cdn-icons-png.flaticon.com/512/147/147144.png'}
+            {id: 5, name: 'Mikita', img: 'https://cdn-icons-png.flaticon.com/512/147/147144.png'}
         ],
         messages: [
             {id: 0, message: 'Hi everyone'},
@@ -34,9 +34,9 @@ let state = {
     sidebar: {
 
         friends: [
-            {id: 0, name: 'Danil', img: 'https://cdn-icons-png.flaticon.com/512/147/147144.png'},
-            {id: 1, name: 'Vladislav', img: 'https://cdn-icons-png.flaticon.com/512/147/147144.png'},
-            {id: 2, name: 'Nikita', img: 'https://cdn-icons-png.flaticon.com/512/147/147144.png'},
+            {id: 0, name: 'Sashko', img: 'https://cdn-icons-png.flaticon.com/512/147/147144.png'},
+            {id: 1, name: 'Vlad', img: 'https://cdn-icons-png.flaticon.com/512/147/147144.png'},
+            {id: 2, name: 'Mikita', img: 'https://cdn-icons-png.flaticon.com/512/147/147144.png'},
         ]
 
     }
