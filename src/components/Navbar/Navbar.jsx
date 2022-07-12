@@ -23,10 +23,13 @@ const Navbar = (props) => {
             <NavLink to='/music' className={setActive}>Music</NavLink>
         </div>
         <div className={classes.item}>
+            <NavLink to='/users' className={setActive}>Users</NavLink>
+        </div>
+        <div className={classes.item}>
             <NavLink to='/settings' className={setActive}>Settings</NavLink>
         </div>
 {/*        {<div className={classes.item}>
-            <NavLink to='/friends' className={setActive}>Friends</NavLink>
+            <NavLink to='/friends' className={setActive}>Users</NavLink>
            {<div>
                 {friendsElements}
             </div>}

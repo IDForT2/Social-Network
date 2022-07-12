@@ -25,24 +25,25 @@ const dialogsReducer = (state = initialState, action) => {
             return  {
                 ...state,
                 newMessageText: action.newText
-            };
+            }
         case ADD_MESSAGE:
-            let text = state.newMessageText;
-            return  {
+            let newMessage = {
+                id: 4,
+                message: state.newMessageText,
+            };
+            return {
                 ...state,
                 newMessageText: "",
-                messages: [...state.messages, {id: 4, message: text}]
-            };
+                messages: [...state.messages, newMessage]
+            }
         default:
             return state;
     }
 }
 
 export const addMessageActionCreator = () => {
-    return ({
-        type: ADD_MESSAGE
-    })
-};
+    return ({type: ADD_MESSAGE});
+}
 
 export const updateNewPostMessageActionCreator = (text) => {
     return ({type: UPDATE_NEW_POST_MESSAGE, newText: text});
