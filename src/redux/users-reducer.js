@@ -64,7 +64,7 @@ export const follow = (userid) => {
     return ({type: FOLLOW, userid});
 }
 
-export const unfollowd = (userid) => {
+export const unfollow = (userid) => {
     return ({type: UNFOLLOW, userid});
 }
 

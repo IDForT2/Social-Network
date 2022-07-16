@@ -1,4 +1,4 @@
-import preloader from "../../../assets/images/preloader.svg";
+import preloader from "../../../assets/images/preloader.gif";
 
 
 let Preloader = (props) => {

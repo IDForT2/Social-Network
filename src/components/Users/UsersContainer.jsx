@@ -5,12 +5,11 @@ import {
     setTotalUsersCount,
     setUsers,
     toggleIsFetching,
-    unfollowd
+    unfollow
 } from "../../redux/users-reducer";
 import React from "react";
 import * as axios from "axios";
 import Users from "./Users";
-import preloader from "../../assets/images/preloader.svg";
 import Preloader from "../common/Preloader/Preloader";
 
 
@@ -66,7 +65,7 @@ let mapStateToProps = (state) => {
             dispatch(followAC(userid));
         },
         unfollow: (userid) => {
-            dispatch(unfollowdAC(userid));
+            dispatch(unfollowAC(userid));
         },
         setUsers: (users) => {
             dispatch(setUsersAC(users))
@@ -86,7 +85,7 @@ let mapStateToProps = (state) => {
 export default connect(mapStateToProps,
     {
         follow,
-        unfollowd,
+        unfollow,
         setUsers,
         setCurrentPage,
         setTotalUsersCount,

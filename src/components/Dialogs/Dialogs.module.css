@@ -8,7 +8,7 @@
     color: white;
 }
 
-.dialogsItems .active {
+.dialogsItems active {
     color: gold;
 }
 
@@ -16,11 +16,16 @@
     padding: 10px;
 }
 
-.messages .message {
+.messages message {
     color: white;
 }
 
 .dialog img {
     width: 50px;
     height: 50px;
+}
+
+.textarea {
+    background-color: white;
+    border-radius: 20px;
 }
