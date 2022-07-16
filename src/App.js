@@ -1,7 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
 import Header from "./components/Header/Header";
-import Profile from "./components/Profile/Profile";
 import News from "./components/News/News";
 import Music from "./components/Music/Music";
 import Settings from "./components/Settings/Settings";
@@ -18,7 +16,9 @@ const App = (props) => {
             <SuperNavbarContainer/>
             <div className='app-wrapper-content'>
                 <Routes>
-                    <Route path="/profile/*"
+                    <Route path="/profile/:userId"
+                           element={<ProfileContainer />}/>
+                    <Route path="/profile/"
                            element={<ProfileContainer />}/>
                     <Route path="/dialogs/*" element={<SuperDialogsContainer/>}/>
                     <Route path="/news" element={<News/>}/>
