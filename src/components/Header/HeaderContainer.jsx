@@ -12,8 +12,8 @@ class HeaderContainer extends React.Component {
         })
             .then(response => {
                 if (response.data.resultCode === 0) {
-                    let {id, email, login, isFetching} = response.data.data
-                    this.props.setAuthUserData(id, email, login, isFetching);
+                    let {id, email, login} = response.data.data
+                    this.props.setAuthUserData(id, email, login);
                 }
             });
     }
