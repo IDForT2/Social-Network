@@ -14,23 +14,10 @@ const ProfileInfo = (props) => {
             {/*    <img src='https://upload.wikimedia.org/wikipedia/commons/5/56/Alabama_Hills1-1200px.jpg'/>*/}
             {/*</div>*/}
             <div className={classes.descriptionBlock}>
-                <img src={props.profile.photos.large}/>
-                <ProfileStatus status={"Hello my friends!"}/>
-                <h3>
-                    {props.profile.fullName}
-                </h3>
-                <div>
-                    About me: {props.profile.aboutMe}
+                <img src={props.profile.photos.large} />
+                <ProfileStatus status={props.status} updateStatus={props.updateStatus}/>
                 </div>
             </div>
-            <div>
-                <h2>
-                    Jobs
-                </h2>
-                <div>
-                </div>
-            </div>
-        </div>
     )
 }
 
