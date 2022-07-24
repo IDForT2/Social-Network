@@ -2,7 +2,7 @@ import React from "react";
 import Profile from "./Profile";
 import {connect} from "react-redux";
 import {getStatus, getUserProfile, updateStatus} from "../../redux/profile-reducer";
-import {Navigate, useParams} from 'react-router-dom'
+import {useParams} from 'react-router-dom'
 import {compose} from "redux";
 
 export function withRouter(Children){
