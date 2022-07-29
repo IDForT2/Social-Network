@@ -66,15 +66,6 @@ export const setStatus = (status) => {
 export const deletePost = (postId) => {
 
     return ({type: DELETE_POST, postId});
-<<<<<<< HEAD
-=======
-}
-
-export const getUserProfile = (userId) => (dispatch) => {
-    usersAPI.getProfile(userId).then(response => {
-        dispatch (setUserProfile(response.data));
-    });
->>>>>>> c92afafbb785a1e648403485bdb744b410e14e59
 }
 
 export const getUserProfile = (userId) => async (dispatch) => {
