@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/Social-Network.git/static/css/main.363b4c9b.css",
+    "main.js": "/Social-Network.git/static/js/main.041ff351.js",
+    "static/css/169.efe0d46f.chunk.css": "/Social-Network.git/static/css/169.efe0d46f.chunk.css",
+    "static/js/169.648c5b2d.chunk.js": "/Social-Network.git/static/js/169.648c5b2d.chunk.js",
+    "static/css/526.5acc976b.chunk.css": "/Social-Network.git/static/css/526.5acc976b.chunk.css",
+    "static/js/526.2c3e06e5.chunk.js": "/Social-Network.git/static/js/526.2c3e06e5.chunk.js",
+    "static/css/797.504435a6.chunk.css": "/Social-Network.git/static/css/797.504435a6.chunk.css",
+    "static/js/797.500983b7.chunk.js": "/Social-Network.git/static/js/797.500983b7.chunk.js",
+    "static/js/787.28cb0dcd.chunk.js": "/Social-Network.git/static/js/787.28cb0dcd.chunk.js",
+    "static/js/434.107700ca.chunk.js": "/Social-Network.git/static/js/434.107700ca.chunk.js",
+    "static/media/preloader.gif": "/Social-Network.git/static/media/preloader.e358f46824f69745d932.gif",
+    "static/media/user.png": "/Social-Network.git/static/media/user.5fedd64859d19a7179b8.png",
+    "index.html": "/Social-Network.git/index.html",
+    "main.363b4c9b.css.map": "/Social-Network.git/static/css/main.363b4c9b.css.map",
+    "main.041ff351.js.map": "/Social-Network.git/static/js/main.041ff351.js.map",
+    "169.efe0d46f.chunk.css.map": "/Social-Network.git/static/css/169.efe0d46f.chunk.css.map",
+    "169.648c5b2d.chunk.js.map": "/Social-Network.git/static/js/169.648c5b2d.chunk.js.map",
+    "526.5acc976b.chunk.css.map": "/Social-Network.git/static/css/526.5acc976b.chunk.css.map",
+    "526.2c3e06e5.chunk.js.map": "/Social-Network.git/static/js/526.2c3e06e5.chunk.js.map",
+    "797.504435a6.chunk.css.map": "/Social-Network.git/static/css/797.504435a6.chunk.css.map",
+    "797.500983b7.chunk.js.map": "/Social-Network.git/static/js/797.500983b7.chunk.js.map",
+    "787.28cb0dcd.chunk.js.map": "/Social-Network.git/static/js/787.28cb0dcd.chunk.js.map",
+    "434.107700ca.chunk.js.map": "/Social-Network.git/static/js/434.107700ca.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.363b4c9b.css",
+    "static/js/main.041ff351.js"
+  ]
+}
