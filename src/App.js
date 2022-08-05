@@ -3,7 +3,7 @@ import './App.css';
 import News from "./components/News/News";
 import Music from "./components/Music/Music";
 import Settings from "./components/Settings/Settings";
-import {Routes, Route, HashRouter} from "react-router-dom";
+import {Routes, Route, BrowserRouter,Navigate} from "react-router-dom";
 import SuperNavbarContainer from "./components/Navbar/NavbarContainer";
 import UsersContainer from "./components/Users/UsersContainer";
 import HeaderContainer from "./components/Header/HeaderContainer";
@@ -18,8 +18,15 @@ const SuperDialogsContainer = React.lazy(() => import('./components/Dialogs/Dial
 const Login = React.lazy(() => import('./components/Login/Login'));
 
 class App extends Component {
+    catchAllUnhandledErrors = (promiseRejectionError) => {
+        alert("Some error occured");
+    }
     componentDidMount() {
         this.props.initializeApp();
+        window.addEventListener("unhandledrejection", this.catchAllUnhandledErrors);
+    }
+    componentWillUnmount() {
+        window.removeEventListener("unhandledrejection", this.catchAllUnhandledErrors);
     }
 
     render() {
@@ -34,6 +41,7 @@ class App extends Component {
                 <div className='app-wrapper-content'>
                     <React.Suspense fallback={<div><Preloader/></div>}>
                         <Routes>
+                            <Route exact path="/" element={<Navigate to={'/profile'} /> } />
                             <Route path="/profile/:userId"
                                    element={<ProfileContainer/>}/>
                             <Route path="/profile/"
@@ -44,6 +52,7 @@ class App extends Component {
                             <Route path="/settings" element={<Settings/>}/>
                             <Route path="/users" element={<UsersContainer/>}/>
                             <Route path="/login" element={<Login/>}/>
+                            <Route path="*" element={<div>404 NOT FOUND</div>}/>
                         </Routes>
                     </React.Suspense>
                 </div>
@@ -60,11 +69,11 @@ let AppContainer = compose(
     connect(mapStateToProps, {initializeApp}))(App);
 
 const SocialNetworkApp = (props) => {
-    return <HashRouter>
+    return <BrowserRouter>
         <Provider store={store}>
             <AppContainer/>
         </Provider>
-    </HashRouter>
+    </BrowserRouter>
 }
 
 export default SocialNetworkApp;
